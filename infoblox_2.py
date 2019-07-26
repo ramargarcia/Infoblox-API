@@ -17,7 +17,7 @@ requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 session = requests.Session()
 session.auth = ('admin', 'infoblox')
 session.verify = False
-url = 'https://10.55.34.16/wapi/v2.6.1/'
+url = 'https://{infoblox_IP}/wapi/v2.6.1/'
 
 def rand_mac():   #function to generate random mac address in case that user doesn't know it
     return "%02x:%02x:%02x:%02x:%02x:%02x" % (
